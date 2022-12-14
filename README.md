@@ -45,7 +45,7 @@
 
     `kubectl get svc -n monitoring`
 
-    `kubectl port-forward svc/kps-grafana -n monitoring 3000:3000`
+    `kubectl port-forward svc/kps-grafana -n monitoring 3000:80`
 
     Open Grafana web page : http://127.0.0.1:3000
 
