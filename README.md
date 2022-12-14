@@ -96,6 +96,8 @@
 
 * Deploy BlackBox Exporter
     
+    `kubectl apply -f blackbox.yml`
+    
     `kubectl create secret generic additional-scrape-configs --from-file=additional_config.yml --dry-run -oyaml > additional-scrape-configs.yml
     `
 
