@@ -81,7 +81,7 @@
 * Clone the repo
     
     ```
-    git clone git@github.com:day4me/kube-prometheus-grafana.git
+    git clone git@github.com:ssitro/kube-prometheus-grafana.git
     ```
 
 * Deploy loadbalancer
