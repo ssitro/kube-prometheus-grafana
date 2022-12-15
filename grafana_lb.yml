@@ -4,6 +4,7 @@ metadata:
   name: grafana-lb
   namespace: monitoring
 spec:
+# Very important to add correct selectors from the pod
   selector:
     app.kubernetes.io/instance: kps
     app.kubernetes.io/name: grafana
