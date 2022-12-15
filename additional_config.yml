@@ -1,5 +1,7 @@
+# Prometheus job to scrape blackbox metrics
 - job_name: 'kube-api-blackbox'
-  metrics_path: /probe
+# Path to metrics storage 
+ metrics_path: /probe
   params:
     module: [http_2xx]
   static_configs:
@@ -7,6 +9,7 @@
       - https://www.google.com
       - https://aws.amazon.com
       - https://www.youtube.com
+ # Remapping configs
   relabel_configs:
   - source_labels: [__address__]
     target_label: __param_target
